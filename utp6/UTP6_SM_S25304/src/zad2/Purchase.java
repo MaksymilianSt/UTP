@@ -36,7 +36,7 @@ public class Purchase {
     public void setData(String data) throws PropertyVetoException {
         vetoableChangeSupport.fireVetoableChange("data", this.data, data);
 
-//        System.out.println("Change value of: data from: " + this.data + " to: " + data);
+//        System.out.println("Change value of: data from: " + this.data + " to: " + data);;
         this.data = data;
 
 

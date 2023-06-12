@@ -48,7 +48,7 @@ public class Purchase {
 
 
     public void setPrice(Double price) throws PropertyVetoException {
-        vetoableChangeSupport.fireVetoableChange("price", this.price, price);;
+        vetoableChangeSupport.fireVetoableChange("price", this.price, price);
 
 
         this.price = price;

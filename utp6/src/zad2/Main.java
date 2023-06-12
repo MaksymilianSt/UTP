@@ -20,6 +20,11 @@ public class Main {
                     throw new PropertyVetoException("Price change to: " + newValue + " not allowed", event);
             }
         });
+        purch.addVetoableChangeListener(event -> {
+            if (event.getPropertyName().equals("price") || event.getPropertyName().equals("data")) {
+                System.out.println("Change value of: data from: " + event.getOldValue() + " to: " + event.getNewValue());
+            }
+        });
 
         try {
             purch.setData("w promocji");

@@ -35,11 +35,7 @@ public class Purchase {
 
     public void setData(String data) throws PropertyVetoException {
         vetoableChangeSupport.fireVetoableChange("data", this.data, data);
-
-
         this.data = data;
-
-
     }
 
     public Double getPrice() {
@@ -49,8 +45,6 @@ public class Purchase {
 
     public void setPrice(Double price) throws PropertyVetoException {
         vetoableChangeSupport.fireVetoableChange("price", this.price, price);
-
-
         this.price = price;
     }
 
